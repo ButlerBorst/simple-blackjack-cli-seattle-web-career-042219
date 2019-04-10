@@ -31,8 +31,11 @@ def initial_round
   return total
 end
 
-def hit?
-  # code hit? here
+def hit?(total)
+  total = display_card_total
+prompt_user
+get_user_input
+  
 end
 
 def invalid_command
