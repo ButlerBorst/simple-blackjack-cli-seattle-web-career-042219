@@ -53,14 +53,6 @@ end
 # get every test to pass before coding runner below #
 #####################################################
 
-def runner
-  welcome 
-  initial_round
-  prompt_user
-  get_user_input
-  
-  
-end
 
 
 def runner
