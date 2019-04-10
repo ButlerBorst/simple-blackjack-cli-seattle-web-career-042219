@@ -35,9 +35,9 @@ def hit?(card_total)
   prompt_user 
   user_input = get_user_input 
   if user_input == "h"
-    card_total += deal_card #increase your former total by the new number given by dealing another card
+    card_total += deal_card  another card
   elsif user_input == "s"
-    card_total #return the number and prompt user to hit again
+    card_total 
   else
     invalid_command
   end
