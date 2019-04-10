@@ -24,6 +24,8 @@ def end_game(num)
 end
 
 def initial_round
+  card_one = deal_card
+  card_two = deal_card
   
 end
 
