@@ -6,8 +6,10 @@ def deal_card
   card = rand(1..11)
 end
 
-def display_card_total
+def display_card_total(num)
   # code #display_card_total here
+  total = (num)
+  puts "Your cards add up to #{total}"
 end
 
 def prompt_user
