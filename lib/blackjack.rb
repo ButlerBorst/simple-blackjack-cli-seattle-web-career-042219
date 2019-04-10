@@ -31,15 +31,22 @@ def initial_round
   return total
 end
 
-def hit?(total)
-  total = display_card_total
-prompt_user
-get_user_input
-  
+def hit?(card_total)
+  prompt_user 
+  user_input = get_user_input 
+  if user_input == "h"
+    card_total += deal_card #increase your former total by the new number given by dealing another card
+  elsif user_input == "s"
+    card_total #return the number and prompt user to hit again
+  else
+    invalid_command
+  end
 end
 
 def invalid_command
-  # code invalid_command here
+  puts "Please enter a valid command"
+  prompt_user
+  get_user_input
 end
 
 #####################################################
