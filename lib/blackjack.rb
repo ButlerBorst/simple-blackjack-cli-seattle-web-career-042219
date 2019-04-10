@@ -57,8 +57,8 @@ end
 
 def runner
   welcome #introduce the game
-  card_total = initial_round #determine your current total & tell user what number they currently have
-  until card_total > 21 #continue game until user loses
+  card_total = initial_round 
+  until card_total > 21 
     card_total = hit?(card_total)
     display_card_total(card_total)
   end
